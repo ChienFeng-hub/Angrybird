@@ -1,0 +1,1121 @@
+$date
+	Mon Dec 24 03:04:43 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb $end
+$scope module test $end
+$var wire 19 ! A0_x [18:0] $end
+$var wire 19 " A0_y [18:0] $end
+$var wire 19 # A1_x [18:0] $end
+$var wire 19 $ A1_y [18:0] $end
+$var wire 19 % A2_x [18:0] $end
+$var wire 19 & A2_y [18:0] $end
+$var wire 19 ' A3_x [18:0] $end
+$var wire 19 ( A3_y [18:0] $end
+$var wire 4 ) A_nth [3:0] $end
+$var wire 19 * Apos_x [18:0] $end
+$var wire 19 + Apos_y [18:0] $end
+$var wire 19 , B0_x [18:0] $end
+$var wire 19 - B0_y [18:0] $end
+$var wire 19 . B1_x [18:0] $end
+$var wire 19 / B1_y [18:0] $end
+$var wire 19 0 B2_x [18:0] $end
+$var wire 19 1 B2_y [18:0] $end
+$var wire 19 2 B3_x [18:0] $end
+$var wire 19 3 B3_y [18:0] $end
+$var wire 4 4 B_nth [3:0] $end
+$var wire 19 5 Bpos_x [18:0] $end
+$var wire 19 6 Bpos_y [18:0] $end
+$var wire 1 7 clk $end
+$var wire 1 8 rst_op $end
+$var wire 10 9 incidentNorm_y [9:0] $end
+$var wire 10 : incidentNorm_x [9:0] $end
+$var wire 2 ; incidentIndex [1:0] $end
+$var wire 1 < flp_done $end
+$var wire 1 = done_out $end
+$var wire 1 > contact $end
+$var wire 1 ? cie_done $end
+$var wire 19 @ PenetrationBA [18:0] $end
+$var wire 19 A PenetrationAB [18:0] $end
+$var wire 10 B Norm_y_BA [9:0] $end
+$var wire 10 C Norm_y_AB [9:0] $end
+$var wire 10 D Norm_x_BA [9:0] $end
+$var wire 10 E Norm_x_AB [9:0] $end
+$var wire 2 F IndexBA [1:0] $end
+$var wire 2 G IndexAB [1:0] $end
+$var wire 1 H BA_done $end
+$var wire 1 I AB_done $end
+$var reg 1 J flip $end
+$var reg 3 K next_state [2:0] $end
+$var reg 2 L referenceIndex [1:0] $end
+$var reg 10 M referenceNorm_x [9:0] $end
+$var reg 10 N referenceNorm_y [9:0] $end
+$var reg 1 O start_cie $end
+$var reg 1 P start_flp $end
+$var reg 3 Q state [2:0] $end
+$scope module AB $end
+$var wire 19 R A0_x [18:0] $end
+$var wire 19 S A0_y [18:0] $end
+$var wire 19 T A1_x [18:0] $end
+$var wire 19 U A1_y [18:0] $end
+$var wire 19 V A2_x [18:0] $end
+$var wire 19 W A2_y [18:0] $end
+$var wire 19 X A3_x [18:0] $end
+$var wire 19 Y A3_y [18:0] $end
+$var wire 19 Z B0_x [18:0] $end
+$var wire 19 [ B0_y [18:0] $end
+$var wire 19 \ B1_x [18:0] $end
+$var wire 19 ] B1_y [18:0] $end
+$var wire 19 ^ B2_x [18:0] $end
+$var wire 19 _ B2_y [18:0] $end
+$var wire 19 ` B3_x [18:0] $end
+$var wire 19 a B3_y [18:0] $end
+$var wire 19 b Bpos_x [18:0] $end
+$var wire 19 c Bpos_y [18:0] $end
+$var wire 1 7 clk $end
+$var wire 10 d norm0_x [9:0] $end
+$var wire 10 e norm0_y [9:0] $end
+$var wire 10 f norm1_x [9:0] $end
+$var wire 10 g norm1_y [9:0] $end
+$var wire 10 h norm2_x [9:0] $end
+$var wire 10 i norm2_y [9:0] $end
+$var wire 10 j norm3_x [9:0] $end
+$var wire 10 k norm3_y [9:0] $end
+$var wire 1 P start $end
+$var wire 19 l temp_BAy [18:0] $end
+$var wire 19 m temp_BAx [18:0] $end
+$var wire 19 n tempVertex_y [18:0] $end
+$var wire 19 o tempVertex_x [18:0] $end
+$var wire 1 p sup_done $end
+$var wire 19 q penetration [18:0] $end
+$var wire 1 I done_out $end
+$var wire 29 r distance [28:0] $end
+$var reg 2 s bestIndex [1:0] $end
+$var reg 10 t bestNorm_x [9:0] $end
+$var reg 10 u bestNorm_y [9:0] $end
+$var reg 19 v bestPenetration [18:0] $end
+$var reg 3 w cnt [2:0] $end
+$var reg 2 x next_bestIndex [1:0] $end
+$var reg 10 y next_bestNorm_x [9:0] $end
+$var reg 10 z next_bestNorm_y [9:0] $end
+$var reg 19 { next_bestPenetration [18:0] $end
+$var reg 1 | sup_start $end
+$scope module s1 $end
+$var wire 1 7 clk $end
+$var wire 10 } dir_x [9:0] $end
+$var wire 10 ~ dir_y [9:0] $end
+$var wire 19 !" pos_x [18:0] $end
+$var wire 19 "" pos_y [18:0] $end
+$var wire 1 | rst $end
+$var wire 19 #" v0_x [18:0] $end
+$var wire 19 $" v0_y [18:0] $end
+$var wire 19 %" v1_x [18:0] $end
+$var wire 19 &" v1_y [18:0] $end
+$var wire 19 '" v2_x [18:0] $end
+$var wire 19 (" v2_y [18:0] $end
+$var wire 19 )" v3_x [18:0] $end
+$var wire 19 *" v3_y [18:0] $end
+$var wire 1 p done $end
+$var reg 19 +" bestVertex_x [18:0] $end
+$var reg 19 ," bestVertex_y [18:0] $end
+$var reg 29 -" best_proj [28:0] $end
+$var reg 3 ." cnt [2:0] $end
+$var reg 29 /" distance [28:0] $end
+$var reg 19 0" next_bestVertex_x [18:0] $end
+$var reg 19 1" next_bestVertex_y [18:0] $end
+$var reg 29 2" next_best_proj [28:0] $end
+$upscope $end
+$upscope $end
+$scope module BA $end
+$var wire 19 3" A0_x [18:0] $end
+$var wire 19 4" A0_y [18:0] $end
+$var wire 19 5" A1_x [18:0] $end
+$var wire 19 6" A1_y [18:0] $end
+$var wire 19 7" A2_x [18:0] $end
+$var wire 19 8" A2_y [18:0] $end
+$var wire 19 9" A3_x [18:0] $end
+$var wire 19 :" A3_y [18:0] $end
+$var wire 19 ;" B0_x [18:0] $end
+$var wire 19 <" B0_y [18:0] $end
+$var wire 19 =" B1_x [18:0] $end
+$var wire 19 >" B1_y [18:0] $end
+$var wire 19 ?" B2_x [18:0] $end
+$var wire 19 @" B2_y [18:0] $end
+$var wire 19 A" B3_x [18:0] $end
+$var wire 19 B" B3_y [18:0] $end
+$var wire 19 C" Bpos_x [18:0] $end
+$var wire 19 D" Bpos_y [18:0] $end
+$var wire 1 7 clk $end
+$var wire 10 E" norm0_x [9:0] $end
+$var wire 10 F" norm0_y [9:0] $end
+$var wire 10 G" norm1_x [9:0] $end
+$var wire 10 H" norm1_y [9:0] $end
+$var wire 10 I" norm2_x [9:0] $end
+$var wire 10 J" norm2_y [9:0] $end
+$var wire 10 K" norm3_x [9:0] $end
+$var wire 10 L" norm3_y [9:0] $end
+$var wire 1 P start $end
+$var wire 19 M" temp_BAy [18:0] $end
+$var wire 19 N" temp_BAx [18:0] $end
+$var wire 19 O" tempVertex_y [18:0] $end
+$var wire 19 P" tempVertex_x [18:0] $end
+$var wire 1 Q" sup_done $end
+$var wire 19 R" penetration [18:0] $end
+$var wire 1 H done_out $end
+$var wire 29 S" distance [28:0] $end
+$var reg 2 T" bestIndex [1:0] $end
+$var reg 10 U" bestNorm_x [9:0] $end
+$var reg 10 V" bestNorm_y [9:0] $end
+$var reg 19 W" bestPenetration [18:0] $end
+$var reg 3 X" cnt [2:0] $end
+$var reg 2 Y" next_bestIndex [1:0] $end
+$var reg 10 Z" next_bestNorm_x [9:0] $end
+$var reg 10 [" next_bestNorm_y [9:0] $end
+$var reg 19 \" next_bestPenetration [18:0] $end
+$var reg 1 ]" sup_start $end
+$scope module s1 $end
+$var wire 1 7 clk $end
+$var wire 10 ^" dir_x [9:0] $end
+$var wire 10 _" dir_y [9:0] $end
+$var wire 19 `" pos_x [18:0] $end
+$var wire 19 a" pos_y [18:0] $end
+$var wire 1 ]" rst $end
+$var wire 19 b" v0_x [18:0] $end
+$var wire 19 c" v0_y [18:0] $end
+$var wire 19 d" v1_x [18:0] $end
+$var wire 19 e" v1_y [18:0] $end
+$var wire 19 f" v2_x [18:0] $end
+$var wire 19 g" v2_y [18:0] $end
+$var wire 19 h" v3_x [18:0] $end
+$var wire 19 i" v3_y [18:0] $end
+$var wire 1 Q" done $end
+$var reg 19 j" bestVertex_x [18:0] $end
+$var reg 19 k" bestVertex_y [18:0] $end
+$var reg 29 l" best_proj [28:0] $end
+$var reg 3 m" cnt [2:0] $end
+$var reg 29 n" distance [28:0] $end
+$var reg 19 o" next_bestVertex_x [18:0] $end
+$var reg 19 p" next_bestVertex_y [18:0] $end
+$var reg 29 q" next_best_proj [28:0] $end
+$upscope $end
+$upscope $end
+$scope module cie0 $end
+$var wire 1 7 clk $end
+$var wire 10 r" incidentNorm_x [9:0] $end
+$var wire 10 s" incidentNorm_y [9:0] $end
+$var wire 10 t" norm0_x [9:0] $end
+$var wire 10 u" norm0_y [9:0] $end
+$var wire 10 v" norm1_x [9:0] $end
+$var wire 10 w" norm1_y [9:0] $end
+$var wire 10 x" norm2_x [9:0] $end
+$var wire 10 y" norm2_y [9:0] $end
+$var wire 10 z" norm3_x [9:0] $end
+$var wire 10 {" norm3_y [9:0] $end
+$var wire 10 |" referenceNorm_x [9:0] $end
+$var wire 10 }" referenceNorm_y [9:0] $end
+$var wire 1 O start $end
+$var wire 20 ~" temp [19:0] $end
+$var wire 1 ? done_out $end
+$var reg 3 !# cnt [2:0] $end
+$var reg 2 "# incidentIndex [1:0] $end
+$var reg 2 ## next_incidentindex [1:0] $end
+$var reg 20 $# next_smallestProduct [19:0] $end
+$var reg 20 %# smallestProduct [19:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx %#
+bx $#
+bx ##
+bx "#
+bx !#
+bx ~"
+bx }"
+bx |"
+bx {"
+bx z"
+bx y"
+bx x"
+bx w"
+bx v"
+bx u"
+bx t"
+bx s"
+bx r"
+bx q"
+bx p"
+bx o"
+bx n"
+bx m"
+bx l"
+bx k"
+bx j"
+bx i"
+bx h"
+bx g"
+bx f"
+bx e"
+bx d"
+bx c"
+bx b"
+bx a"
+bx `"
+bx _"
+bx ^"
+x]"
+bx \"
+bx ["
+bx Z"
+bx Y"
+bx X"
+bx W"
+bx V"
+bx U"
+bx T"
+bx S"
+bx R"
+xQ"
+bx P"
+bx O"
+bx N"
+bx M"
+bx L"
+bx K"
+bx J"
+bx I"
+bx H"
+bx G"
+bx F"
+bx E"
+bx D"
+bx C"
+bx B"
+bx A"
+bx @"
+bx ?"
+bx >"
+bx ="
+bx <"
+bx ;"
+bx :"
+bx 9"
+bx 8"
+bx 7"
+bx 6"
+bx 5"
+bx 4"
+bx 3"
+bx 2"
+bx 1"
+bx 0"
+bx /"
+bx ."
+bx -"
+bx ,"
+bx +"
+bx *"
+bx )"
+bx ("
+bx '"
+bx &"
+bx %"
+bx $"
+bx #"
+bx ""
+bx !"
+bx ~
+bx }
+x|
+bx {
+bx z
+bx y
+bx x
+bx w
+bx v
+bx u
+bx t
+bx s
+bx r
+bx q
+xp
+bx o
+bx n
+bx m
+bx l
+bx k
+bx j
+bx i
+bx h
+bx g
+bx f
+bx e
+bx d
+bx c
+bx b
+bx a
+bx `
+bx _
+bx ^
+bx ]
+bx \
+bx [
+bx Z
+bx Y
+bx X
+bx W
+bx V
+bx U
+bx T
+bx S
+bx R
+bx Q
+xP
+xO
+bx N
+bx M
+bx L
+bx K
+xJ
+xI
+xH
+bx G
+bx F
+bx E
+bx D
+bx C
+bx B
+bx A
+bx @
+x?
+x>
+x=
+x<
+bx ;
+bx :
+bx 9
+08
+07
+bx 6
+bx 5
+bx 4
+bx 3
+bx 2
+bx 1
+bx 0
+bx /
+bx .
+bx -
+bx ,
+bx +
+bx *
+bx )
+bx (
+bx '
+bx &
+bx %
+bx $
+bx #
+bx "
+bx !
+$end
+#1000
+0=
+b1 K
+0|
+0]"
+1O
+1P
+b0 Q
+1J
+b0 {"
+b100000000 y"
+b0 w"
+b1100000000 u"
+b100000000 z"
+b0 x"
+b1100000000 v"
+b0 t"
+bx /"
+b0 L"
+b100000000 K"
+b100000000 J"
+b0 I"
+b0 H"
+b1100000000 G"
+b1100000000 F"
+b0 E"
+bx n"
+b0 k
+b100000000 j
+b100000000 i
+b0 h
+b0 g
+b1100000000 f
+b1100000000 e
+b0 d
+18
+b11001000000000 6
+b11001000000000 c
+b11001000000000 ""
+b1001011000000000 5
+b1001011000000000 b
+b1001011000000000 !"
+b110010000000000 3
+b110010000000000 a
+b110010000000000 *"
+b110010000000000 :"
+b1100100000000000 2
+b1100100000000000 `
+b1100100000000000 )"
+b1100100000000000 9"
+b110010000000000 1
+b110010000000000 _
+b110010000000000 ("
+b110010000000000 8"
+b110010000000000 0
+b110010000000000 ^
+b110010000000000 '"
+b110010000000000 7"
+b0 /
+b0 ]
+b0 &"
+b0 6"
+b110010000000000 .
+b110010000000000 \
+b110010000000000 %"
+b110010000000000 5"
+b0 -
+b0 [
+b0 $"
+b0 4"
+b1100100000000000 ,
+b1100100000000000 Z
+b1100100000000000 #"
+b1100100000000000 3"
+b0 4
+b110010000000000 +
+b110010000000000 D"
+b110010000000000 a"
+b110010000000000 *
+b110010000000000 C"
+b110010000000000 `"
+b1001011000000000 (
+b1001011000000000 Y
+b1001011000000000 B"
+b1001011000000000 i"
+b1001011000000000 '
+b1001011000000000 X
+b1001011000000000 A"
+b1001011000000000 h"
+b1001011000000000 &
+b1001011000000000 W
+b1001011000000000 @"
+b1001011000000000 g"
+b11001000000000 %
+b11001000000000 V
+b11001000000000 ?"
+b11001000000000 f"
+b11001000000000 $
+b11001000000000 U
+b11001000000000 >"
+b11001000000000 e"
+b11001000000000 #
+b11001000000000 T
+b11001000000000 ="
+b11001000000000 d"
+b11001000000000 "
+b11001000000000 S
+b11001000000000 <"
+b11001000000000 c"
+b1001011000000000 !
+b1001011000000000 R
+b1001011000000000 ;"
+b1001011000000000 b"
+b0 )
+17
+#2000
+07
+#3000
+0>
+0<
+b0 ##
+b0 $#
+0?
+b10000000000000000000000000001 n"
+0H
+b0 Y"
+b0 ["
+b0 Z"
+b1000000000000000001 \"
+b10000000000000000000000000001 /"
+0I
+0J
+b0 L
+b0 ~"
+b0 N
+b0 }"
+b0 M
+b0 |"
+b0 x
+b0 z
+b0 y
+b1000000000000000001 {
+b0 :
+b0 r"
+b1100000000 9
+b1100000000 s"
+b0 ;
+b0 "#
+b0 %#
+b0 !#
+1]"
+b0 ^"
+b100000000 _"
+b0 X"
+b0 F
+b0 T"
+b0 B
+b0 V"
+b0 D
+b0 U"
+b1000000000000000001 @
+b1000000000000000001 W"
+1|
+b0 }
+b100000000 ~
+b0 w
+b0 G
+b0 s
+b0 C
+b0 u
+b0 E
+b0 t
+b1000000000000000001 A
+b1000000000000000001 v
+b1 Q
+17
+08
+#4000
+07
+#5000
+0p
+b11001000000000 q
+b0 1"
+b1100100000000000 0"
+b10000000000000000000000000001 2"
+0Q"
+b1111100111000000000 R"
+b11001000000000 p"
+b1001011000000000 o"
+b10000000000000000000000000001 q"
+b0 ."
+b10000000000000000000000000001 -"
+b1100100000000000000000 r
+b1111100111000000000 l
+b0 n
+b0 ,"
+b11001000000000 m
+b1100100000000000 o
+b1100100000000000 +"
+b0 m"
+b10000000000000000000000000001 l"
+b11111110011100000000000000000 S"
+b11001000000000 M"
+b11001000000000 O"
+b11001000000000 k"
+b1111100111000000000 N"
+b1001011000000000 P"
+b1001011000000000 j"
+0P
+17
+#6000
+07
+#7000
+b11111110011100000000000000000 q"
+b11111110011100000000000000000 n"
+b11111110011100000000000000000 2"
+b11111110011100000000000000000 /"
+0]"
+0|
+17
+#8000
+07
+#9000
+b11111110011100000000000000000 /"
+b11111110011100000000000000000 n"
+b1 ."
+b11111110011100000000000000000 -"
+b1 m"
+b11111110011100000000000000000 l"
+17
+#10000
+07
+#11000
+b1001011000000000 p"
+b11001000000000 o"
+b1100100000000000000000 q"
+b1100100000000000000000 n"
+b110010000000000 1"
+b110010000000000 0"
+b1100100000000000000000 2"
+b1100100000000000000000 /"
+b10 m"
+b10 ."
+17
+#12000
+07
+#13000
+b1100000000 z
+b1111100111000000000 {
+b1100000000 ["
+b1110110101000000000 \"
+1p
+b1111100111000000000 q
+b1100100000000000000000 /"
+1Q"
+b1110110101000000000 R"
+b1100100000000000000000 n"
+b11 ."
+b1100100000000000000000 -"
+b11111110011100000000000000000 r
+b11001000000000 l
+b110010000000000 n
+b110010000000000 ,"
+b1111100111000000000 m
+b110010000000000 o
+b110010000000000 +"
+b11 m"
+b1100100000000000000000 l"
+b11111011010100000000000000000 S"
+b1001011000000000 M"
+b1001011000000000 O"
+b1001011000000000 k"
+b1110110101000000000 N"
+b11001000000000 P"
+b11001000000000 j"
+17
+#14000
+07
+#15000
+b11001000000000 R"
+b10000000000000000000000000001 n"
+0Q"
+b10000000000000000 ~"
+b1100000000 N
+b1100000000 }"
+b10000000000000000000000000001 /"
+0p
+1]"
+b100000000 ^"
+b0 _"
+b1111100111000000000 N"
+b1100100000000000000000 S"
+b1 X"
+b1100000000 B
+b1100000000 V"
+b1110110101000000000 @
+b1110110101000000000 W"
+b100 m"
+1|
+b100000000 }
+b0 ~
+b11001000000000 m
+b11111110011100000000000000000 r
+b1 w
+b1100000000 C
+b1100000000 u
+b1111100111000000000 A
+b1111100111000000000 v
+b100 ."
+17
+#16000
+07
+#17000
+b1110110101000000000 q
+b1100100000000000000000 /"
+b0 1"
+b1100100000000000 0"
+b1100100000000000000000 2"
+b1111100111000000000 R"
+b1100100000000000000000 n"
+b11001000000000 p"
+b1001011000000000 o"
+b1100100000000000000000 q"
+b0 ."
+b10000000000000000000000000001 -"
+b1111100111000000000 l
+b0 n
+b0 ,"
+b11111011010100000000000000000 r
+b1001011000000000 m
+b1100100000000000 o
+b1100100000000000 +"
+0|
+b0 m"
+b10000000000000000000000000001 l"
+b11001000000000 M"
+b11001000000000 O"
+b11001000000000 k"
+b11111110011100000000000000000 S"
+b11001000000000 N"
+b1001011000000000 P"
+b1001011000000000 j"
+0]"
+17
+#18000
+07
+#19000
+b11111110011100000000000000000 n"
+b11111110011100000000000000000 /"
+b1 m"
+b1100100000000000000000 l"
+b1 ."
+b1100100000000000000000 -"
+17
+#20000
+07
+#21000
+b11111110011100000000000000000 /"
+b11111110011100000000000000000 n"
+b10 ."
+b10 m"
+17
+#22000
+07
+#23000
+b1 Y"
+b0 ["
+b1100000000 Z"
+b1111100111000000000 \"
+b1100100000000000000000 n"
+1Q"
+b1100100000000000000000 /"
+1p
+b11 m"
+b11 ."
+17
+#24000
+07
+#25000
+0p
+b10000000000000000000000000001 /"
+0Q"
+b10000000000000000000000000001 n"
+b100 ."
+1|
+b0 }
+b1100000000 ~
+b1110110101000000000 l
+b11111011010100000000000000000 r
+b10 w
+b100 m"
+1]"
+b0 ^"
+b1100000000 _"
+b1111100111000000000 M"
+b11111110011100000000000000000 S"
+b10 X"
+b1 F
+b1 T"
+b0 B
+b0 V"
+b1100000000 D
+b1100000000 U"
+b1111100111000000000 @
+b1111100111000000000 W"
+17
+#26000
+07
+#27000
+b1100100000000000000000 n"
+b1100100000000000000000 q"
+b1100100000000000000000 /"
+b1100100000000000000000 2"
+0]"
+b0 m"
+b10000000000000000000000000001 l"
+0|
+b0 ."
+b10000000000000000000000000001 -"
+17
+#28000
+07
+#29000
+b1100100000000000000000 /"
+b1100100000000000000000 n"
+b1 ."
+b1100100000000000000000 -"
+b1 m"
+b1100100000000000000000 l"
+17
+#30000
+07
+#31000
+b11111110011100000000000000000 n"
+b11111110011100000000000000000 /"
+b10 m"
+b10 ."
+17
+#32000
+07
+#33000
+b11111110011100000000000000000 /"
+1p
+b11111110011100000000000000000 n"
+1Q"
+b11 ."
+b11 m"
+17
+#34000
+07
+#35000
+b10000000000000000000000000001 n"
+0Q"
+b11001000000000 q
+b10000000000000000000000000001 /"
+0p
+1]"
+b1100000000 ^"
+b0 _"
+b1111100111000000000 N"
+b11111110011100000000000000000 S"
+b11 X"
+b100 m"
+1|
+b1100000000 }
+b0 ~
+b11001000000000 m
+b1100100000000000000000 r
+b11 w
+b100 ."
+17
+#36000
+07
+#37000
+b11111110011100000000000000000 /"
+b11111110011100000000000000000 2"
+b11111110011100000000000000000 n"
+b11111110011100000000000000000 q"
+b0 ."
+b10000000000000000000000000001 -"
+0|
+b0 m"
+b10000000000000000000000000001 l"
+0]"
+17
+#38000
+07
+#39000
+b11001000000000 o"
+b1100100000000000000000 q"
+b1100100000000000000000 n"
+b110010000000000 0"
+b1100100000000000000000 2"
+b1100100000000000000000 /"
+b1 m"
+b11111110011100000000000000000 l"
+b1 ."
+b11111110011100000000000000000 -"
+17
+#40000
+07
+#41000
+b1100100000000000000000 /"
+b1111100111000000000 q
+b1100100000000000000000 n"
+b1110110101000000000 R"
+b10 ."
+b1100100000000000000000 -"
+b11111110011100000000000000000 r
+b1111100111000000000 m
+b110010000000000 o
+b110010000000000 +"
+b10 m"
+b1100100000000000000000 l"
+b11111011010100000000000000000 S"
+b1110110101000000000 N"
+b11001000000000 P"
+b11001000000000 j"
+17
+#42000
+07
+#43000
+b11111110011100000000000000000 n"
+1Q"
+b11111110011100000000000000000 /"
+1p
+b11 m"
+b11 ."
+17
+#44000
+07
+#45000
+1>
+b10 K
+1<
+0p
+b10000000000000000000000000001 /"
+bx q
+1I
+0Q"
+b10000000000000000000000000001 n"
+bx R"
+1H
+b100 ."
+1|
+bx }
+bx ~
+bx m
+bx l
+bx r
+b100 w
+b100 m"
+1]"
+bx ^"
+bx _"
+bx N"
+bx M"
+bx S"
+b100 X"
+17
+#46000
+07
+#47000
+bx n"
+b1001011000000000 o"
+b10000000000000000000000000001 q"
+bx /"
+b1100100000000000 0"
+b10000000000000000000000000001 2"
+0]"
+b0 m"
+b10000000000000000000000000001 l"
+b1001011000000000 P"
+b1001011000000000 j"
+0|
+b0 ."
+b10000000000000000000000000001 -"
+b1100100000000000 o
+b1100100000000000 +"
+b10 Q
+17
+#48000
+07
+#49000
+bx /"
+bx n"
+b1 ."
+b1 m"
+0O
+17
+#50000
+07
+#51000
+bx n"
+bx /"
+b0 ~"
+b1 !#
+b10 m"
+b10 ."
+17
+#52000
+07
+#53000
+bx /"
+1p
+bx n"
+1Q"
+b10 ##
+b11110000000000000000 $#
+b11 ."
+b11 m"
+b11110000000000000000 ~"
+b10 !#
+17
+#54000
+07
+#55000
+b11 K
+1?
+bx n"
+0Q"
+bx /"
+0p
+b0 ~"
+b11 !#
+b100000000 9
+b100000000 s"
+b10 ;
+b10 "#
+b11110000000000000000 %#
+b100 m"
+b100 ."
+17
+#56000
+07
+#57000
+b100 K
+b11 Q
+17
+#58000
+07
+#59000
+1=
+b100 Q
+17
+#60000
+07
+#61000
+17
+#62000
+07
+#63000
+17
+#64000
+07
+#65000
+17
+#66000
+07
+#67000
+17
+#68000
+07
+#69000
+17
+#70000
+07
+#71000
+17
+#72000
+07
+#73000
+17
+#74000
+07
+#75000
+17
+#76000
+07
+#77000
+17
+#78000
+07
+#79000
+17
+#80000
+07
+#81000
+17
+#82000
+07
+#83000
+17
