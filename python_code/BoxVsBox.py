@@ -49,8 +49,8 @@ def ClipSegmentToLine(lineNorm, incidentNorm, contact1, contact2, c1):
     # ax+by+c = 0
     # [ lineNorm.x, lineNorm.y ][ x ] = [ c1 ]
     # [ incident.x, incident.y ][ y ] = [ c2 ]
-    # [ x ] = [ incident.y, -lineNorm.y ][ c1 ] / det
-    # [ y ] = [ -incident.x, lineNorm.x ][ c2 ] / det
+    # [ x ] = [ incident.y, -lineNorm.y ][ c1 ]
+    # [ y ] = [ -incident.x, lineNorm.x ][ c2 ]
     det = lineNorm.x * incidentNorm.y - lineNorm.y * incidentNorm.x
     c2 = dot(incidentNorm, contact1.pos)
     newPos = Vector(0,0)
@@ -66,10 +66,10 @@ def ClipSegmentToLine(lineNorm, incidentNorm, contact1, contact2, c1):
 
     if product1 < 0:
         contact1.pos = newPos
-        # contact1.normal = contact2.normal
+        contact1.normal = contact2.normal
     elif product2 < 0:
         contact2.pos = newPos
-        # contact2.normal = contact1.normal
+        contact2.normal = contact1.normal
     else:
         return
 
@@ -135,7 +135,7 @@ def Collide(Contacts, bodyA, bodyB):
         contact2.pos = v[(incidentIndex+1)%4]
         contact2.normal = referenceNorm
 
-    c1 = dot(side1Norm, vertice[(referenceIndex)%4])
+    c1 = dot(side1Norm, vertice[(referenceIndex-1)%4])
     ClipSegmentToLine(side1Norm, incidentNorm, contact1, contact2, c1)
     c1 = dot(side2Norm, vertice[(referenceIndex+1)%4])
     ClipSegmentToLine(side2Norm, incidentNorm, contact1, contact2, c1)

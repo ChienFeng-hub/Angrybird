@@ -40,8 +40,8 @@ def init():
 
     img_angryBird = Image.open('angryBird.png')
     weight, height = img_angryBird.size
-    if(weight != 40) & (height != 40):
-        img_angryBird = img_angryBird.resize((40, 40))
+    if(weight != 35) & (height != 35):
+        img_angryBird = img_angryBird.resize((35, 35))
         img_angryBird.save('angryBird.png')
     img_bird = ImageTk.PhotoImage(img_angryBird)
 
@@ -54,22 +54,20 @@ def init():
 
     body = []
     body.append(Box(320, 440, 980, 80))
-    body.append(Box(380, 400 - h/2, w, h))
     body.append(Box(420, 400 - h/2, w, h))
     body.append(Box(480, 400 - h/2, w, h))
     body.append(Box(450, 400 - h - w/2, h, w))
-    # body.append(Box(435, 400 - h - w - h/2, w, h))
-    # body.append(Box(465, 400 - h - w - h/2, w, h))
-    # body.append(Box(450, 400 - 2*h - w - w/2, h, w))
+    body.append(Box(435, 400 - h - w - h/2, w, h))
+    body.append(Box(465, 400 - h - w - h/2, w, h))
+    body.append(Box(450, 400 - 2*h - w - w/2, h, w))
     body.append(Box(450, 400 - 12.5, 20, 20))
-    body.append(Box(org_pos[0], org_pos[1], 32, 32))
+    body.append(Box(org_pos[0], org_pos[1], 25, 25))
     # body.append(Circle(480, 150, 25))
     # body.append(Circle(org_pos[0], org_pos[1], 15)) #must put last one
 
 
     body[0].type = "static"
     body[len(body) - 2].type = "pig"
-    body[len(body) - 1].name = "bird"
     # body[0].angle = 0.0
 
     root.bind("<Key>", key)

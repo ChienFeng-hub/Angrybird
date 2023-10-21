@@ -15,7 +15,6 @@ class Body:
         self.radius = 0
         self.density = 0.3
         self.alive = True
-        self.name = "none"
 
     def inv_mass(self):
         if self.type == "dynamic":

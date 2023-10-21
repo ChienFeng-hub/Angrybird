@@ -43,14 +43,12 @@ class Arbiter():
             self.numContacts = CircleVsBox.Collide(self.contacts, self.body1, self.body2)
 
         else:
-            # if body1.pos.y > body2.pos.y:
-            #     self.body1 = body1
-            #     self.body2 = body2
-            # else:
-            #     self.body1 = body2
-            #     self.body2 = body1
-            self.body1 = body2
-            self.body2 = body1
+            if body1.pos.y > body2.pos.y:
+                self.body1 = body1
+                self.body2 = body2
+            else:
+                self.body1 = body2
+                self.body2 = body1
             self.numContacts = BoxVsBox.Collide(self.contacts, self.body1, self.body2)
 
 
@@ -78,14 +76,7 @@ class Arbiter():
             kTangent += self.body1.inv_I() * (dot(r1, r1) - rt1 * rt1) \
                         + self.body2.inv_I() * (dot(r2, r2) - rt2 * rt2)
             c.massTangent = 1.0/kTangent
-
             c.bias = -k_biasFactor * inv_dt * min(0.0, c.separation + k_allowedPenetration)
-
-            # print(c.separation, c.pos.x, c.pos.y, c.normal.x, c.normal.y, self.body1.pos.x, self.body1.pos.y
-            #       , self.body2.pos.x, self.body2.pos.y, self.body1.inv_mass(), self.body2.inv_mass(), self.body1.inv_I(), self.body2.inv_I())
-            # print("----")
-            # print(c.massTangent, c.massNormal, kNormal, kTangent, c.bias)
-            # print("---------")
 
             # P = c.normal * c.Pn + tangent * c.Pt
             # self.body1.vel -= P * self.body1.inv_mass()
@@ -120,10 +111,9 @@ class Arbiter():
                     b2.alive = False
 
             # Clamp the accumulated impulse
-            # Pn0 = c.Pn
-            # c.Pn = max(Pn0 + dPn, 0.0)
-            # dPn = max(c.Pn - Pn0, 0.0)
-            dPn = max(dPn, 0.0)
+            Pn0 = c.Pn
+            c.Pn = max(Pn0 + dPn, 0.0)
+            dPn = max(c.Pn - Pn0, 0.0)
 
             Pn = c.normal * dPn
 
@@ -141,10 +131,9 @@ class Arbiter():
             dPt = c.massTangent * (-vt)
 
             maxPt = friction * c.Pn
-            # oldTangentImpulse = c.Pt
-            # c.Pt = clamp(oldTangentImpulse + dPt, -maxPt, maxPt)
-            # dPt = c.Pt - oldTangentImpulse
-            dPt = clamp(dPt, -maxPt, maxPt)
+            oldTangentImpulse = c.Pt
+            c.Pt = clamp(oldTangentImpulse + dPt, -maxPt, maxPt)
+            dPt = c.Pt - oldTangentImpulse
 
             Pt = tangent * dPt
 
@@ -154,9 +143,8 @@ class Arbiter():
             b2.vel += Pt * self.body2.inv_mass()
             b2.angVel += self.body2.inv_I() * cross(c.r2, Pt)
 
-            # print(Pn.x, Pn.y, cross(c.r1, Pn))
-            # print(dPn, dPt, c.Pn, c.Pt)
-            # print(b1.vel.x, b1.vel.y, b1.angVel, b1.name)
+            # print(dPn, dPt)
+
 
 
 
